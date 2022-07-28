@@ -25,11 +25,11 @@
                     <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                         <div class="navbar-nav ms-auto display-8 fw-bold">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            <a class="nav-link" href="#">Courses</a>
-                            <a class="nav-link" href="#">Deals</a>
-                            <a class="nav-link" href="#">Success</a>
-                            <a class="nav-link" href="#">About</a>
-                            <a class="nav-link" href="#">Register</a>
+                            <a class="nav-link" href="#courses">Courses</a>
+                            <a class="nav-link" href="#deal">Deals</a>
+                            <a class="nav-link" href="#success">Success</a>
+                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link" href="#register">Register</a>
                             
                         </div>
                     </div>
@@ -39,21 +39,24 @@
         <!----------------- nav section start ------------------------->
 
         <!------------------- Head slider section start -------------------->
-       <div class="container mb-5">
+       <div class="container my-5 pt-3">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner ">
-                <div class="carousel-item active image-opacity ">
+                <div class="carousel-item active">
                     <img src="images/cover/cover-1.png" class="d-block w-100 img-fluid"  alt="..." style="filter: brightness(60%);">
-                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
-                        <h5 class="display-2 fw-bold">Get Started Digitel Learning</h5>
-                        <p>It is a long established fact that a reader will be distracted by <br> the readable content of a page when looking at its layout.</p>
-                        <button type="button" class="btn btn-primary">Get Started</button>
+                    <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                        <div class="">
+                            <h5 class="display-2 fw-bold">Get Started Digitel Learning</h5>
+                            <p>It is a long established fact that a reader will be distracted by <br> the readable content of a page when looking at
+                                its layout.</p>
+                            <button type="button" class="btn btn-primary px-5 py-3 fw-bold">Get Started</button>
+                        </div>
 
                     </div>
                 </div>
-                <div class="carousel-item image-opacity">
+                <div class="carousel-item">
                     <img src="images/cover/cover-2.png" class="d-block w-100 img-fluid" alt="..." style="filter: brightness(60%);">
-                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                    <div class="carousel-caption h-100 d-flex flex-column justify-content-center align-items-center ">
                         <h5 class="display-2 fw-bold">Get Started Digitel Learning</h5>
                         <p>It is a long established fact that a reader will be distracted by <br> the readable content of a page when looking at its layout.</p>
                         <button type="button" class="btn btn-primary">Get Started</button>
@@ -87,7 +90,7 @@
 <main>
     <!--------------------------- Populer course start ------------------------->
     <section>
-        <div class="container ">
+        <div class="container d-none d-sm-block" id="courses">
             <div class="text-center pb-5">
                 <h1 class="fw-bold">Discover Our Popular
                 Courses</h1>
@@ -95,8 +98,8 @@
                 content of a page when looking at its layout.</p>
             </div>
             <div class="row g-5">
-                <div class="d-flex d-column col-md-12 col-lg-6">
-                    <div class="">
+                <div class="d-flex d-column col-md-12 col-lg-6 ">
+                    <div class=" ">
                         <img src="images/course/course-1.png" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="ps-2">
@@ -168,6 +171,59 @@
 
         </div>
 
+        <!------------------ mobile responsive --------------------------->
+    <div class="container d-block d-sm-none overflow-hidden">
+        <div class="text-center pb-5">
+            <h1 class="fw-bold">Discover Our Popular
+                Courses</h1>
+            <p>It is a long established fact that a reader will be distracted by the readable <br>
+                content of a page when looking at its layout.</p>
+        </div>
+        <div class="row g-5">
+            <div class="">
+                <div class=" ">
+                    <img src="images/course/course-1.png" class="img-fluid rounded-start w-100" alt="...">
+                </div>
+                <div class="ps-2">
+                    <h2 class="card-title fw-semibold">Fundamental Of UI/UX Design</h2>
+                    <p class="card-text">Some quick example text to build on the card title
+                        and make up the bulk of the card.</p>
+                    <h6 class="fw-bold text-info">Price : $20</h6>
+                </div>
+            </div>
+            <div class="">
+                <div class="">
+                    <img src="images/course/course-2.png" class="img-fluid rounded-start w-100" alt="...">
+                </div>
+                <div class="ps-2">
+                    <h2 class="card-title fw-semibold">Fundamental Of UI/UX Design</h2>
+                    <p class="card-text">Some quick example text to build on the card title
+                        and make up the bulk of the card.</p>
+                    <h6 class="fw-bold text-info">Price : $20</h6>
+                </div>
+            </div>
+            <div class="">
+                <div class="">
+                    <img src="images/course/course-3.png" class="img-fluid rounded-start w-100" alt="...">
+                </div>
+                <div class="ps-2">
+                    <h2 class="card-title fw-semibold">Fundamental Of UI/UX Design</h2>
+                    <p class="card-text">Some quick example text to build on the card title
+                        and make up the bulk of the card.</p>
+                    <h6 class="fw-bold text-info">Price : $20</h6>
+                </div>
+            </div>
+            
+        </div>
+        <div class="text-center">
+            <button type="button" class="btn btn-primary display-8 fw-bold my-5 py-2 px-5 text-center">See More
+                Courses</button>
+        </div>
+    
+    </div>
+        
+
+
 
               
        
@@ -177,7 +233,7 @@
 <!-------------------- Explore the elearning section start ------------------->
 
 <section>
-    <div class="container ">
+    <div class="container " id="about">
         <div class="d-flex row row-cols-sm-1 row-cols-md-2 row-cols-lg-2 my-5">
             <div class="col">
                 <img src="images/working.png" alt="" class="img-fluid">
@@ -186,14 +242,9 @@
                 <div class="col ">
                     <h2 class="display-4 fw-semibold pt-3 pb-4">Explore The elearning
                         Institute</h2>
-                    <p class="text-black-50 fs-5">There are many variations of passages of Lorem Ipsum available, but the
-                        majority have suffered alteration in some form, by injected humour, or
-                        randomised words which don't look even slightly believable. If you are going
-                        to use a passage of Lorem Ipsum, you need to be sure. <br>
-                
-                
-                        Anything embarrassing hidden in the middle of text. All the Lorem Ipsum
-                        generators on the Internet tend to repeat predefined.</p>
+                    <p class="text-black-50 fs-5">Stable Employer with No Layoffs and focused on Future Growth and Investing in Employees. Remote Work Opportunity with
+                    Exciting & Challenging Role for Industry Leading Employer. On Campus Deli. Wellness Clinic. Berkshire Hathaway.</p>
+                    
                 
                         <div class="d-flex justify-content-evenly pt-3 flex-wrap">
                             <div class="">
@@ -230,7 +281,7 @@
 
 <!------------------- Ready to join section --------------------------->
 <section>
-    <div class="container my-5">
+    <div class="container my-5" id="register">
         <div class="bg-primary p-5 row rounded ">
             <div class="text-white col-12 col-md-6 text-sm-center text-lg-start">
                 <h1 class="fw-bold">Ready to join?</h1>
@@ -267,7 +318,7 @@
 
 <!--------------------------- Meet our student section start --------------------------->
 <section>
-    <div class="container">
+    <div class="container" id="success">
         <div class="mb-5">
             <h2 class="display-6 fw-semibold">Meet Our Successfull <br>
             Students</h2>
@@ -322,9 +373,93 @@
 
 <!--------------------------- Meet our student section end --------------------------->
 
+<!-- --------------------Some student feedback section start --------------------------->
+<section>
+    <div class="container overflow-hidden">
+        <div class=" text-center mb-5">
+            <h2 class="display-4 fw-semibold ">Some Students Feedback</h2>
+            <p>It is a long established fact that a reader will be distracted by the readable <br>
+                content of a page when looking at its layout</p>
+        </div>
+        <div class="row gx-5 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 mb-3" >
+            <div class="">
+                <div class="border p-3 col">
+                    <div class="d-flex justify-content-between">
+                        <div><img src="images/comma.png" alt=""></div>
+                        <div style="color: goldenrod;">
+                            <i class="fa fa-solid fa-star filled"></i>
+                            <i class="fa fa-solid fa-star filled"></i>
+                            <i class="fa fa-solid fa-star filled"></i>
+                            <i class="fa fa-solid fa-star filled"></i>
+                            <i class="fa fa-regular fa-star filled"></i>
+                        </div>
+                    </div>
+                    <p>A UI review follows a similar approach to reviewing design elements in terms of classifying issues. Depending on the
+                    reviewer and the needs of the project, the analysis may place emphasis on various factors such as user flows, UI design,
+                    interactions, and accessibility, to name just a few.</p>
+                    <div>
+                        <div class="d-flex ">
+                            <div>
+                                <img src="images/student/student-5.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="ps-3">
+                                <h5>Awlad Hossain</h5>
+                                <p>UI Designer</p>
+                            </div>
+                
+                        </div>
+                
+                    </div>
+                </div>
+                
+            </div>
+            <div class="">
+                <div class="border p-3 col">
+                    <div class="d-flex justify-content-between">
+                        <div><img src="images/comma.png" alt=""></div>
+                        <div style="color: goldenrod;">
+                            <i class="fa fa-solid fa-star filled"></i>
+                            <i class="fa fa-solid fa-star filled"></i>
+                            <i class="fa fa-solid fa-star filled"></i>
+                            <i class="fa fa-solid fa-star filled"></i>
+                            <i class="fa fa-regular fa-star filled"></i>
+                        </div>
+                    </div>
+                    <p>Stable Employer with No Layoffs and focused on Future Growth and Investing in Employees. Remote Work Opportunity with
+                    Exciting & Challenging Role for Industry Leading Employer. On Campus Deli. Wellness Clinic. Berkshire Hathaway. Great
+                    Benefits. Fitness Center. Competitive Salary.</p>
+                    <div>
+                        <div class="d-flex ">
+                            <div>
+                                <img src="images/student/student-6.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="ps-3">
+                                <h5>Shanta Akter</h5>
+                                <p>Graphic Designer</p>
+                            </div>
+                
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-3 text-center d-block d-lg-none">
+            <button type="button" class="btn btn-primary px-5 py-3">View All</button>
+        </div>
+    </div>
+
+    
+
+
+    
+</section>
+
+<!-- --------------------Some student feedback section start --------------------------->
+
 <!--------------- Freequently ask question start--------------------------->
     <section>
-        <div class="container d-flex justify-content-center align-items-center">
+        <div class="container d-flex justify-content-center align-items-center mt-5" id="deal">
             <div class="w-75 ">
                 <div class="text-center mb-5">
                     <h2 class="display-6 fw-semibold">Frequently Asked Questions</h2>
